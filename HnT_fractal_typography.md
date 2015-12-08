@@ -1,5 +1,5 @@
 # Fractal Typography
-_(sierpinski, knuth, memes, and a Turning complete system)_
+_(Sierpinski, Knuth, memes, and a Turning complete system)_
 
 *[Travis Hoppe](http://thoppe.github.io/)*
 ----------
@@ -12,7 +12,8 @@ Donald Knuth created TeX; wrote a a [diatribe](http://www-cs-faculty.stanford.ed
 
 
 ## $i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t)$
-Used by physics & mathematics to make equations and papers beautiful.
+Used by physicists & mathematicians to make 
+beautiful equations and academic papers.
 
 ====
 # Fractals
@@ -22,8 +23,8 @@ self-similar patterns governed by a rule
 !(figures/mand.gif) <<height:400px;transparent>>
 
 ====*
-# Fractals via memes
-the inception arguement
+## Fractals via memes
+the inception argument
 
 !(figures/800px-Sup_dawg.jpg)
 =====*
@@ -39,10 +40,11 @@ will be our "template"
 ### Compile and repeat
 Used `pdflatex` to compile and copy the result back into `source.pdf`.
 
+
     \documentclass{standalone}
     \usepackage{graphicx}
-    \newcommand{\A}{\includegraphics[width=50cm]{pdf/source.pdf}}
-    
+    \newcommand{\A}{\ἰncludegraphics{pdf/source}}
+    ...    
     \begin{document}
     \begin{center}
     \begin{tabular}{lll}
@@ -91,8 +93,8 @@ compiled to depth 1000
 _Not exponential growth...?_
 
 ====*
-## How much information in each PDF?
-!(figures/depth.png) <<height:550px;transparent>>
+## How much information?
+!(figures/depth.png) <<height:550px;>>
 only 41 unique bytes per level!  (FYI PDF's are Turing complete)
 ====
 
