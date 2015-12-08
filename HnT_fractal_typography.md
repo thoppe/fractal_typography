@@ -1,88 +1,100 @@
-# Orthographic Pedant
-_(five minute hack-and-tell version)_
+# Fractal Typography
+_(sierpinski, knuth, memes, and a Turning complete system)_
 
 *[Travis Hoppe](http://thoppe.github.io/)*
 ----------
-[https://github.com/thoppe/orthographic-pedant](https://github.com/thoppe/orthographic-pedant)
+[https://github.com/thoppe/fractal_typography](https://github.com/thoppe/fractal_typography)
 
 ====
+Donald Knuth created TeX; wrote a a [diatribe](http://www-cs-faculty.stanford.edu/~uno/cm.html) on the shape of $\delta$.
+!(figures/knuth.jpg) <<height:270px;transparent>> 
+!(figures/typography.jpg) <<height:270px;transparent>>
 
-### ostentatious life goal #226
 
-# spell check 
-# the internet
-
-====*
-
-### ostentatious life goal #226
-...turns out the internet is a really big place...
-
-# spell check 
-# *<span style="text-decoration: line-through;">the internet</span>*
-## github?
+## $i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t)$
+Used by physics & mathematics to make equations and papers beautiful.
 
 ====
-# Meet Lars,
-## the orthographic pedant.
-!(images/hipster.jpg)<<height:400px; transparent>> [https://github.com/thoppe/orthographic-pedant](https://github.com/thoppe/orthographic-pedant)
+# Fractals
+self-similar patterns governed by a rule
+
+!(figures/mand2.jpg) <<height:400px;transparent>>
+!(figures/mand.gif) <<height:400px;transparent>>
+
 ====*
-### Automatic Pull Requests
+# Fractals via memes
+the inception arguement
 
-!(images/example_correct.png) <<height:450px>>
-====*
-### _A lot_ of Pull Requests
-The project currently has 100 github stars...
-
-!(images/example_con.png) <<height:450px>>
-
+!(figures/800px-Sup_dawg.jpg)
+=====*
+## Fractals + typography = ?
 =====
+### Sierpinski's carpet
+will be our "template"
+!(figures/sierpinski.gif) <<height:650px;transparent>>
+=====*
+### Source image
+!(figures/s1.png) <<height:650px;transparent>>
+=====*
+### Compile and repeat
+Used `pdflatex` to compile and copy the result back into `source.pdf`.
 
-## Even the big guys make 
-## typographical errors!
-
-### [Google](https://github.com/google/upb/pull/39), [Yahoo](https://github.com/yahoo/YMCache/pull/12), [Facebook](https://github.com/facebook/fbpush/pull/1),
-### [Uber](https://github.com/uber/logtron/pull/39), [Netflix](https://github.com/Netflix/inviso/pull/10), [AWS](https://github.com/awslabs/aws-lambda-redshift-loader/pull/54),
-### [Cloud Foundry](https://github.com/cloudfoundry-samples/github-service-broker-ruby/pull/12), [Flipboard](https://github.com/Flipboard/FLEX/pull/81), 
-### [heroku](https://github.com/heroku/mobile-template1/pull/23), [eBay](https://github.com/eBay/restcommander/pull/14), [Elastic Search](https://github.com/elastic/puppet-elasticsearch/pull/460), ...
-
-=====
-
-## Almost everybody loves him!
-
-@orthographic-pedant you bring light to dark places. [@jambun](https://github.com/hudmol/archivesspace/pull/786#issuecomment-144568493)
-This excites me more than it should. [@Kainzo](https://github.com/MilkBowl/Vault/pull/632#issuecomment-144826246)
-As much as I enjoy the view from linguistic squalor, 
-I feel obliged to visit pedantry avenue occasionally. [@reggieb](https://github.com/reggieb/indulgence/pull/2)
-You, sir, are a gentleman and a scholar. [@RichardLitt](https://github.com/k88hudson/git-flight-rules/pull/91#issuecomment-144483181)
-@orthographic-pedant thx little bot :) [@theengineear](https://github.com/plotly/postMessage-API/pull/2)
-Loving this bot, @orthographic-pedant! [@pudo](https://github.com/pudo/apikit/pull/1#issuecomment-143965254)
-This is... wonderful. [@p0pr0ck5](https://github.com/p0pr0ck5/FreeWAF/pull/71#event-429401497)
+    \documentclass{standalone}
+    \usepackage{graphicx}
+    \newcommand{\A}{\includegraphics[width=50cm]{pdf/source.pdf}}
+    
+    \begin{document}
+    \begin{center}
+    \begin{tabular}{lll}
+    \A & \A & \A\\
+    \A &    & \A\\
+    \A & \A & \A
+    \end{tabular}
+    \end{center}
+    \end{document}
 
 ====
+### [Level 2 (8 copies)](pdf/level_002.pdf)
+!(figures/s2.png) <<height:650px;transparent>>
+====*
+### [Level 3 (512 copies)](pdf/level_003.pdf)
+!(figures/s3.png) <<height:650px;transparent>>
+====*
+### [Level 4 (4096 copies)](pdf/level_004.pdf)
+!(figures/s4.png) <<height:650px;transparent>>
+====*
+### [Level 5 (32768 copies)](pdf/level_005.pdf)
+!(figures/s5.png) <<height:650px;transparent>>
+====*
+### Level 6 (262144 copies)
 
-## _almost everybody_...
+crashes my PDF viewer
 
-In the meantime, you're more than welcome to stuff your bot and your pedantry wherever you see fit. Personally, I'm not only rejecting such an arrogant and pretentious PR, but I'm also not fixing the typo just to annoy you. [@sole](https://github.com/thoppe/orthographic-pedant/issues/20)
+used to crash Google Docs (funny story...)
 
-Your bot is a d-bag. [@peanav](https://github.com/peanav/LESS-Presentation/pull/1)
-=====
+...
 
-## Lessons learned
+Can we go deeper?
+====
+## How big are the files?
+compiled to depth 1000
 
-It's easy to get 100 stars in github if you work on _other_ people's projects.
+    -rw-r--r-- 1 hoppeta hoppeta 27664 Dec  8 13:52 level_001.pdf
+    -rw-r--r-- 1 hoppeta hoppeta 28753 Dec  8 13:52 level_002.pdf
+    -rw-r--r-- 1 hoppeta hoppeta 29132 Dec  8 13:52 level_003.pdf
+    -rw-r--r-- 1 hoppeta hoppeta 29539 Dec  8 13:52 level_004.pdf
+    -rw-r--r-- 1 hoppeta hoppeta 29938 Dec  8 13:52 level_005.pdf
+    -rw-r--r-- 1 hoppeta hoppeta 30338 Dec  8 13:52 level_006.pdf
+    ...
+    -rw-r--r-- 1 hoppeta hoppeta 431996 Dec  8 11:10 level_999.pdf
 
-Start with a white-list, not a general spell-checker.
+_Not exponential growth...?_
 
-Language is hard, ex. French `attendent` vs `attendant`.
-
-Don't be Eurocentric "d-bag", `Caesar` vs `Ceasar`.
-
-Build a [honeypot](https://github.com/orthographic-pedant/honeypot) and they will come.
-
-I've only made it through the C's...
-
-=====
-
-
+====*
+## How much information in each PDF?
+!(figures/depth.png) <<height:550px;transparent>>
+only 41 unique bytes per level!  (FYI PDF's are Turing complete)
+====
 
 # Thanks, you!
+Tweet thoughts to [@metasemantic](https://twitter.com/metasemantic)!
