@@ -26,19 +26,19 @@ A few iterations (1,2,3,4,5, and 999) can be found in the [pdf directory](pdf).
 ## Examples
 
 **Level 1** (source image)
-!(figures/s1.png)
+![](figures/s1.png)
 
 **Level 2** (8 copies)
-!(figures/s2.png)
+![](figures/s2.png)
 
 **Level 3** (512 copies)
-!(figures/s3.png)
+![](figures/s3.png)
 
 **Level 4** (4096 copies)
-!(figures/s4.png)
+![](figures/s4.png)
 
 **Level 5** (3276 copies)
-!(figures/s5.png)
+![](figures/s5.png)
 
 ---------
 
