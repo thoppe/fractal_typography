@@ -37,7 +37,7 @@ A few iterations (1,2,3,4,5, and 999) can be found in the [pdf directory](pdf).
 **Level 4** (4096 copies)
 ![](figures/s4.png)
 
-**Level 5** (3276 copies)
+**Level 5** (32768 copies)
 ![](figures/s5.png)
 
 ---------
