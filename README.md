@@ -45,3 +45,10 @@ A few iterations (1,2,3,4,5, and 999) can be found in the [pdf directory](pdf).
 **Level 999** (8^999 copies)
 [Good luck!](pdf/level_999.pdf)
 
+
+### Presentation
+
+http://thoppe.github.io/fractal_typography/HnT_index.html#/
+
+First presented at [DC Hack && Tell Round 27: Hyperion Christmas Carols](https://www.meetup.com/DC-Hack-and-Tell/events/220231803/).
+
